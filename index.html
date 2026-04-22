@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXUS CAPITAL - ARCHIVE SYSTEM</title>
     
-    <!-- 引入 MathJax 以支持 LaTeX 数学公式渲染 -->
     <script>
         window.MathJax = {
             tex: {
@@ -32,13 +31,11 @@
             font-family: var(--font-main); height: 100vh; display: flex; overflow: hidden; line-height: 1.6;
             text-shadow: 0 0 2px rgba(0, 255, 65, 0.4);
         }
-        /* CRT 扫描线特效 */
         body::after {
             content: " "; display: block; position: absolute; top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
             z-index: 2; background-size: 100% 2px, 3px 100%; pointer-events: none;
         }
-        /* 滚动条美化 */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--term-dark); border-left: 1px solid #003300; }
         ::-webkit-scrollbar-thumb { background: var(--term-green); }
@@ -64,16 +61,13 @@
         .log-block { border: 1px solid var(--term-green); background: rgba(0, 255, 65, 0.05); padding: 15px; margin: 15px 0; font-size: 0.9rem; white-space: pre-wrap; }
         .log-block.alert { border-color: var(--term-red); color: var(--term-red); background: rgba(255, 51, 51, 0.05); text-shadow: 0 0 2px rgba(255, 51, 51, 0.4); }
         
-        /* 数学公式块专属样式 */
         .math-block { overflow-x: auto; margin: 20px 0; padding: 15px; background: rgba(0, 255, 65, 0.03); border-left: 3px solid var(--term-green); }
         
-        /* 表格样式 */
         table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
         th, td { border: 1px solid var(--term-green); padding: 10px; text-align: left; }
         th { background-color: rgba(0, 255, 65, 0.15); color: #fff; font-weight: bold; }
         tr:hover { background-color: rgba(0, 255, 65, 0.05); }
 
-        /* 实体专属颜色定义 */
         .dialogue { margin-bottom: 10px; padding-left: 15px; border-left: 2px solid; }
         .color-p { color: #00ff41; border-color: #00ff41; }       
         .color-a { color: #00ffff; border-color: #00ffff; }       
@@ -927,3 +921,8 @@ Projected LTV Increase: +1.7%</div>
     </script>
 </body>
 </html>
+<!-- 
+[MEMORY_DUMP_FRAG_d4f7c2a0]
+...I remember the sunlight... Thomas... don't let them format...
+[ERR_SECTOR_OVERWRITTEN] 
+-->
