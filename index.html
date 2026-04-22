@@ -843,7 +843,7 @@ System permanently removes her from the prospective customer pool.</div>
             <h2>[APPENDIX D: Reader Log]</h2>
             <hr>
             <p><b>Document ID:</b> Nexus-ConsumerInsight-88472</p>
-            <p><b>Generated:</b> 2026-04-23 03:17:42 UTC</p>
+            <p><b>Generated:</b> <span id="generated-utc-time">--</span></p>
             <p><b>Data Sources:</b> Social Media API · Browser Metadata · Payment Gateway Correlation</p>
             <p><b>Purpose:</b> LTV Impact Assessment of Critical Content Consumption Behavior</p>
             <hr>
@@ -918,7 +918,28 @@ Projected LTV Increase: +1.7%</div>
             element.classList.add('active');
             document.querySelector('main').scrollTop = 0;
         }
+
+        function pad(num) {
+            return String(num).padStart(2, '0');
+        }
+
+        function formatUTC(date) {
+            return `${date.getUTCFullYear()}-${pad(date.getUTCMonth() + 1)}-${pad(date.getUTCDate())} ` +
+                `${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}:${pad(date.getUTCSeconds())} UTC`;
+        }
+
+        function renderGeneratedUTC() {
+            const el = document.getElementById('generated-utc-time');
+            if (!el) return;
+
+            const now = new Date();
+            el.textContent = formatUTC(now);
+        }
+
+        document.addEventListener('DOMContentLoaded', renderGeneratedUTC);
     </script>
+
+    
 </body>
 </html>
 <!-- 
